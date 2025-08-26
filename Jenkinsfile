@@ -12,7 +12,6 @@ pipeline {
             steps {
                 // 'sh' step executes a shell command (for Linux/macOS)
                 echo "Building the application..."
-                sh 'echo "Simulating a build command with ${BUILD_TOOLS}"'
             }
         }
 
@@ -21,7 +20,6 @@ pipeline {
             steps {
                 echo "Running unit tests..."
                 // Use a different agent or tool for this stage
-                sh 'echo "Simulating tests..."'
             }
         }
 
@@ -30,7 +28,6 @@ pipeline {
             steps {
                 echo "Deploying the application..."
                 // Example of a conditional deployment step
-                sh 'echo "Deploying to a staging environment..."'
             }
         }
     }
