@@ -5,12 +5,6 @@ pipeline {
     // Defines where the pipeline will run. 'any' means any available agent.
     agent any
 
-    // Optional section for defining environment variables
-    environment {
-        // Example of a simple environment variable
-        BUILD_TOOLS = 'npm'
-    }
-
     // The stages block contains all the stages of the pipeline
     stages {
         // First stage: Build
